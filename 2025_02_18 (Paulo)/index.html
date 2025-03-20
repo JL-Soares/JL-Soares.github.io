@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Escola - Inscrição</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .caixa1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-self: center;
+        border: orange solid 3px;
+        height: 300px;
+        width: 600px;
+        background-color: cyan;
+        margin-left: 500px
+      }
+    </style>
+  </body>
+    <div class="caixa1">
+    <h1>Autoescola - Inscrição</h1>
+    <p>
+      Informe sua idade abaixo para verificarmos sua elegibilidade.<br /><br />Idade:
+      <input type="number" id="id_numero2" />
+      <input type="button" value="Verificar" onclick="verificar2()" />
+    </p>
+    <p id="id_resultado2"></p>
+    <p id="id_resultado3"></p>
+    <script src="script.js"></script>
+      </div>
+  </body>
+</html>

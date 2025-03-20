@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela IMC</title>
+    <script src="Tabela.js"></script>
+    <style>
+      .botoes {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="formulario" autocomplete="off">
+    <h1>Calculadora de IMC</h1>
+    <p>
+      Altura: <input type="number" id="id_altura" placeholder="Informe a altura" required /> Peso:
+      <input type="number" id="id_peso" placeholder="Informe o peso" required />
+      <button type="submit" onclick="verificacao()">Verificar</button><br />
+      </p><p id="id_resultado"></p><br/>
+      <input type="button" value="Resultados Detalhados" onclick="detalhes()" />      <a href="tabela.html" class="botoes"><button type="button">Mais Detalhes</a><button type="reset">Limpar</button>
+      <p id="id_detalhes"></p>
+    </p>
+    </form>
+  </body>
+</html>
