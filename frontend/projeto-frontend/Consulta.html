@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="Consulta.css">
+</head>
+<body>
+<main>
+    <h1>Consulta</h1>
+    <div class="divcolunas">
+        <section class="busca">
+            <h2 class="visually-hidden">Buscar e gerenciar por ID</h2>
+            <label for="id">ID</label>
+            <input class="idinput" id="id" name="id" type="number">
+            <button id="editar" class="editar" onclick="editar()" type="button">Editar</button><button id="excluir" class="excluir" onclick="excluir()" type="button">Excluir</button>
+        </section>
+    </div>
+    <form id="formulario" autocomplete="on">
+        <section>
+            <h2 class="visually-hidden">Edição</h2>
+        <div class="diveditar1"><div class="diveditar2">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" required disabled>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email" required disabled>
+                    <label for="matricula">Matrícula:</label>
+                    <input id="matricula" name="matricula" type="number" required disabled>
+                    <button id="salvar" class="salvar" type="submit" disabled>Salvar</button>
+                    <div class="centralizar">
+                        <button id="cancelar" class="cancelar" type="button" disabled>Cancelar Edição</button>
+        </div>                  </div>
+                <div>
+                    <textarea id="alunos" disabled aria-live="polite"></textarea>
+                </div></div>
+        </section>
+    </form>
+</main>
+</body>
+<script src="Consulta.js"></script>
+</html>
